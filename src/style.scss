@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/mobile-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: 450px;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    padding-top: 20px;
+  }
+}
+
+.game-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px 10px 20px;
+
+  &__score {
+    align-items: center;
+    padding-top: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  &__restart {
+    top: 60vh;
+    left: 60vw;
+    z-index: 100;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
+  &__start-button {
+    top: 60vh;
+    left: 60vw;
+    z-index: 100;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
+  &__start-button:active {
+    background-color: black;
+    color: white;
+  }
+}
+
+.container {
+  border: 2px solid clear;
+  border-radius: 10px;
+  display: grid;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+
+  &__image {
+    width: 270px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  &__questions {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  &__answer {
+    top: 60vh;
+    left: 60vw;
+    z-index: 100;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+  }
+
+  &__next-question {
+    width: 60%;
+    height: auto;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+  }
+
+  &__next-question:active {
+    background-color: black;
+    color: white;
+  }
+}
+
+.correct {
+  background-color: rgb(200, 250, 178);
+}
+
+.incorrect {
+  background-color: rgb(246, 174, 174);
+}
+
+.thankyou-message {
+  font-size: 30px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(./assets/desktop-background.png);
+    background-size: 1600px;
+    align-items: center;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+
+    &__text {
+      text-align: center;
+      font-size: 45px;
+      color: rgb(172, 170, 170);
+      padding-top: 20px;
+    }
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .game-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 80px 10px 80px;
+
+    &__score {
+      align-items: center;
+      padding-top: 10px;
+      font-size: 30px;
+      border: 1px solid black;
+      color: black;
+      background-color: white;
+      border-radius: 20px;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    &__start-button {
+      top: 60vh;
+      left: 60vw;
+      z-index: 100;
+      font-size: 2rem;
+      background-color: white;
+      color: black;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 20px;
+    }
+
+    &__start-button:active {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  .container {
+    border: 2px solid clear;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    margin: 20px 150px 0 80px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    float: left;
+
+    &__image {
+      width: 250px;
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    &__questions {
+      font-size: 25px;
+      margin: 10px;
+    }
+
+    &__answer {
+      top: 60vh;
+      left: 60vw;
+      z-index: 100;
+      font-size: 15px;
+      width: 350px;
+      background-color: white;
+      color: black;
+      padding: 10px;
+      margin: 10px;
+      margin-bottom: 5px;
+      border-radius: 20px;
+    }
+
+    &__next-question {
+      width: 60%;
+      height: auto;
+      font-size: 20px;
+      background-color: white;
+      color: black;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 20px;
+    }
+
+    &__next-question:active {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+.correct {
+  background-color: rgb(200, 250, 178);
+}
+
+.incorrect {
+  background-color: rgb(246, 174, 174);
+}
